@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="470" viewBox="0 0 1120 470" role="img" aria-labelledby="title desc">
+  <title id="title">Go REST API request flow</title>
+  <desc id="desc">Request flow diagram for a Go REST API using Gorilla Mux, handlers, GORM and SQLite.</desc>
+  <rect width="1120" height="470" rx="18" fill="#f8fafc"/>
+  <defs>
+    <style>
+      .box{fill:#fff;stroke:#cbd5e1;stroke-width:2}
+      .go{fill:#ecfeff;stroke:#0891b2}
+      .db{fill:#f8f5ff;stroke:#7c3aed}
+      .t{font-family:Inter,Segoe UI,Arial,sans-serif;fill:#111827}
+      .h{font-size:22px;font-weight:850}
+      .p{font-size:16px}
+      .s{font-size:12px;fill:#475569}
+      .arrow{stroke:#334155;stroke-width:3;fill:none;marker-end:url(#arrow)}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#334155"/>
+    </marker>
+  </defs>
+  <text x="42" y="48" class="t h">Go REST API</text>
+  <text x="42" y="76" class="t s">Layered task-management API with routing, handlers, persistence and Docker-friendly local setup</text>
+  <rect x="54" y="150" width="180" height="120" rx="12" class="box"/>
+  <text x="92" y="194" class="t p">HTTP client</text>
+  <text x="92" y="222" class="t s">curl, frontend or tests</text>
+  <rect x="294" y="150" width="180" height="120" rx="12" class="box go"/>
+  <text x="330" y="194" class="t p">Gorilla Mux</text>
+  <text x="330" y="222" class="t s">Routes and path params</text>
+  <rect x="534" y="150" width="180" height="120" rx="12" class="box go"/>
+  <text x="570" y="194" class="t p">Handlers</text>
+  <text x="570" y="222" class="t s">CRUD JSON endpoints</text>
+  <rect x="774" y="150" width="180" height="120" rx="12" class="box db"/>
+  <text x="816" y="194" class="t p">GORM</text>
+  <text x="816" y="222" class="t s">Task model mapping</text>
+  <rect x="774" y="330" width="180" height="80" rx="12" class="box db"/>
+  <text x="820" y="365" class="t p">SQLite</text>
+  <text x="820" y="390" class="t s">Local persistence</text>
+  <path d="M234 210 H294" class="arrow"/>
+  <path d="M474 210 H534" class="arrow"/>
+  <path d="M714 210 H774" class="arrow"/>
+  <path d="M864 270 V330" class="arrow"/>
+  <path d="M774 370 C650 370 210 330 145 270" class="arrow"/>
+</svg>

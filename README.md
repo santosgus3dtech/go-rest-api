@@ -2,6 +2,8 @@
 
 Task management REST API built with Go, Gorilla Mux, GORM and SQLite.
 
+![API flow](docs/images/api-flow.svg)
+
 ## What It Shows
 
 - RESTful CRUD endpoints.
@@ -12,7 +14,7 @@ Task management REST API built with Go, Gorilla Mux, GORM and SQLite.
 ## Project Structure
 
 ```text
-go-api-rest/
+go-rest-api/
   db/
   handlers/
   models/
@@ -87,5 +89,4 @@ curl -X DELETE http://localhost:8080/tasks/1
 - Add unit tests around handlers.
 - Add request validation.
 - Add pagination and filtering.
-- Add GitHub Actions for build/test checks.
-
+- Expand the current GitHub Actions build/test checks with integration tests.
