@@ -1,5 +1,7 @@
 # Go REST API
 
+🇧🇷 [Leia este README em Português (Brasil)](README.pt-BR.md).
+
 Task management REST API built with Go, Gorilla Mux, GORM and SQLite.
 
 ![API flow](docs/images/api-flow.svg)
